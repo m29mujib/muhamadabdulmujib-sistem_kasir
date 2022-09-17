@@ -1,0 +1,25 @@
+READ AND WRITE "Barang" with string
+READ AND WRITE "JumlahBeli" with number
+READ AND WRITE "UangBayar" with number
+
+IF "Barang == 'Mie'
+  STORE "Harga" With 2500
+  STORE "Total" With "JumlahBeli" multiplied by "Harga"
+  STORE "Kembalian" With "JumlahBeli" substract by "UangBayar"
+  PRINT "Pesanan: Mie " 
+  PRINT "Harga: 2500 " 
+  PRINT "Jumlah beli: "JumlahBeli" " 
+  PRINT "Yang Harus Dibayar: "Total" " 
+  PRINT "Uang Bayar: "UangBayar" " 
+  PRINT "Uang Kembalian: "Kembalian" " 
+ELSE IF "Barang == 'Kopi'
+  STORE "Harga" With 1500
+  STORE "Total" With "JumlahBeli" multiplied by "Harga"
+  STORE "Kembalian" With "JumlahBeli" substract by "UangBayar"
+  PRINT "Pesanan: Kopi " 
+  PRINT "Harga: 1500 " 
+  PRINT "Jumlah beli: "JumlahBeli" 
+  PRINT "Yang Harus Dibayar: "Total" 
+  PRINT "Uang Bayar: "UangBayar"
+  PRINT "Uang Kembalian: "Kembalian"
+END IF
